@@ -33,7 +33,7 @@ def solution(participant, completion):
     # for문에서 i는 completion에있는 "eden", "kiki", "leo" 값을 순서대로 갖고온다.
     # 만약 i가 dict_h에 저장되어있는 key값이라면,,
     # dict_h[i] => dict_h["leo"] 의 value값에 +1 증가 시켜라,,
-    # dict_h = {"leo" : 1 , "kiki" : 1, "eden" : 1, "leo" : 0} 
+    # dict_h = {"leo" : 1 , "kiki" : 1, "eden" : 1} 
 
     for j in participant:
         if j in dict_h:
@@ -42,8 +42,9 @@ def solution(participant, completion):
     # "leo", "kiki", "eden", "leo"  값을 순서대로 갖고온다.
     # 만약 j가 dict_h에 존재한다면,,
     # dict_h[j] => dict_h["leo"] 의 value값에 -1 증감 시켜라,,
+    # 그런데,, participant에는 "leo"가 두번있어서,, -1을 두번 시킨다.
+    # 그래서 "leo"만 -1이 된다. 
     # dict_h = {"leo" : -1 , "kiki" : 0, "eden" : 0}
-    
     
     for key, value in dict_h.items():
         if value < 0:
