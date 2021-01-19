@@ -45,7 +45,7 @@ def solution(bridge_length, weight, truck_weights):
             bridge.push(DUMMY_TRUCK)
 
         count += 1
-
+        
     while bridge:
         bridge.pop()
         count += 1
