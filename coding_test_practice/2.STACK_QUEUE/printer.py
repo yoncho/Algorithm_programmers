@@ -21,7 +21,7 @@ def solution(priorities, location):
     #s에 있는 값들을 문제에 의해 처리해서 결과를 넣어줄 큐
     ans_i = []
     #ans에 넣어주는 값들이 priorities에서 갖고있던 인덱스들을 넣어줄 큐 
-    count = 0
+    flag = 0
     
     # s = deque([1, 1, 9, 1, 1, 1])
     # index_s = deque([0, 1. 2. 3. 4. 5])
@@ -36,19 +36,19 @@ def solution(priorities, location):
         # index_s = [1, 2. 3. 4. 5] 가 된다.
         for i in range(len(s)):
             if stay < s[i]:
-                count = 2
+                flag = 2
                 break
             else:
-                count = 1
+                flag = 1
         #len(s) = 4 이므로 i는 0 ~ 4까지 돈다
         # 만약 stay = 1 보다 큰 값이 있으면 count = 2를 넣어주고 for문을 끝낸다.
         # 만약 stay = 1 보다 큰 값이 for문을 끝까지 돌렸을때 없으면 count = 1이 넣어진 상태로 끝난다.
         # 그러면 아래 if문으로 내려가자
 
-        if count == 1:
+        if flag == 1:
             ans.append(stay)
             ans_i.append(stay_s)
-        if count == 2:
+        if flag == 2:
             s.append(stay)
             index_s.append(stay_s) 
         #만약 stay보다 큰 값이 s큐에 있으면 count = 2인 것이고
