@@ -2,6 +2,8 @@
 Number | Type | Name | Language | Date 
 ----|---------|----------|-------|------
  1 | Hash | [marathon, phone_number_list, spy_clothes, best_album](https://github.com/yoncho/Algorithm_programmers/tree/main/coding_test_practice/1.Hash)  | Python, C++ | 2021.01.14
-2 | Stack & Queue | [stock_price, function_dev](https://github.com/yoncho/Algorithm_programmers/tree/main/coding_test_practice/2.STACK_QUEUE)  | Python, C++ | 2021.01.17
+2 | Stack & Queue | [stock_price, function_dev, truck_on_bridge, printer](https://github.com/yoncho/Algorithm_programmers/tree/main/coding_test_practice/2.STACK_QUEUE)  | Python, C++ | 2021.01.17
+3 | HEAP | [more_spicy](https://github.com/yoncho/Algorithm_programmers/tree/main/coding_test_practice/3.HEAP)  | Python, C++ | 2021.01.21
+
 
 
