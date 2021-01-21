@@ -41,7 +41,6 @@ def solution(jobs):
 
         time += 1 # 시간의 경과
 
-
         if priorities == [] and disk == []:
             break
 
