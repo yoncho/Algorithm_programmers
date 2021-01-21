@@ -1,5 +1,4 @@
 import heapq
-
 def solution(jobs):
     time = 0
     start_time = 0
