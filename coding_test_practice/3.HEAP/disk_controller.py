@@ -43,4 +43,5 @@ def solution(jobs):
         if priorities == [] and disk == []:
             break
 
+
     return int(sum_task_time/task_num)
